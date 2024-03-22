@@ -2,11 +2,11 @@ package board;
 
 public class Position {
     private int row;
-    private int collum;
+    private int column;
 
-    public Position(int row, int collum) {
+    public Position(int row, int column) {
         this.row = row;
-        this.collum = collum;
+        this.column = column;
     }
 
     public int getRow() {
@@ -17,16 +17,16 @@ public class Position {
         this.row = row;
     }
 
-    public int getCollum() {
-        return collum;
+    public int getcolumn() {
+        return column;
     }
 
-    public void setCollum(int collum) {
-        this.collum = collum;
+    public void setcolumn(int column) {
+        this.column = column;
     }
 
     @Override
     public String toString(){
-        return row+";"+collum;
+        return row+";"+column;
     }
 }
