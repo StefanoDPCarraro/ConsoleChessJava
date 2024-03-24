@@ -6,7 +6,6 @@ import board.Piece;
 import board.Position;
 import chess.pieces.*;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 
