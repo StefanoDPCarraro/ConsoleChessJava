@@ -1,2 +1,4 @@
 # ConsoleChessJava
-Java project of a console chess, to learn OOP, following the udemy course of Nelio Alves "Java COMPLETO Programação Orientada a Objetos + Projetos"
+Project finished, to play open in console and run the Program.class application with you Java installed.
+If possible a console that supports different colors such as gitBash is recommended for better experience.
+Doing the project was fun and everything seems to be right, if found any bugs feel free to report them.
