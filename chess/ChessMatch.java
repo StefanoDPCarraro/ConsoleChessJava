@@ -104,7 +104,7 @@ public class ChessMatch {
         }
 
         //SPECIAL MOVE EN PASSANT
-        if(movedPiece instanceof Pawn && (target.getRow() == target.getRow()-2 || target.getRow() == target.getRow()+2 )){
+        if(movedPiece instanceof Pawn && (target.getRow() == source.getRow()-2 || target.getRow() == source.getRow()+2 )){
             enPassantVulnerable = movedPiece;
         }
         else{
@@ -118,8 +118,8 @@ public class ChessMatch {
         if(promoted == null){
             throw new IllegalStateException("There is no piece to be promoted");
         }
-        if(!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("N")){
-            throw new InvalidParameterException("Invalida type for promotion");
+        if(!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")){
+            return promoted;
         }
 
         Position pos = promoted.getChessPosition().toPosition();
